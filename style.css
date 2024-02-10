@@ -1,0 +1,195 @@
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap');
+
+#wrapper{
+
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+
+    background-image: linear-gradient(40deg, rgb(75, 84, 87),rgb(60, 86, 100),rgb(48, 77, 94), rgb(42, 85, 110));
+}
+.container{
+
+    max-width: 80%;
+    width: 1080px;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 2rem;
+    font-family: 'Roboto Condensed', sans-serif;
+    padding-top: 3rem;
+}
+.header{
+
+    font-size: 2rem;
+    color: rgb(255, 237, 237);
+    font-weight: 600;
+    text-transform: uppercase;
+
+}
+
+.output{
+
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+    color: rgb(255, 237, 237);
+    padding: 1.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    background-color: rgba(68, 118, 255, 0.414);
+    border-radius: 1rem;
+    box-shadow: 1px 3px 5px 5px rgb(59, 159, 192);
+}
+
+.main_body{
+
+    width: 456px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    background-color: rgba(68, 118, 255, 0.414);
+    border-radius: 1rem;
+    box-shadow: 1px 3px 5px 5px rgb(59, 159, 192);
+    gap: 1rem;
+    color: rgb(255, 237, 237);
+}
+
+.length{
+
+    display: flex;
+    justify-content: space-between;
+    gap: 8rem;
+    font-size: 1.5rem;
+}
+
+.value_length{
+
+    color: rgb(34, 229, 255);
+    font-weight: 900
+}
+
+.slider{
+    width: 100%;
+}
+.slide_range{
+    width: 100%;
+}
+
+.option{
+   
+    font-size: 1rem;
+    margin-top: 0.3rem;
+}
+
+.strength{
+
+    font-size: 1.25rem;
+    margin-top: 0.6rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.display_password{
+
+    background-color: inherit;
+    border: 0px;
+    font-size: 1.5rem;
+    color: cadetblue;
+    font-weight: 700;
+    width: 20rem;
+}
+
+.display_password:focus{
+
+    outline: none;
+}
+
+.clip_button{
+
+    position: relative;
+    background-color: #395FA2;
+    cursor: pointer;
+    border: 0px;
+}
+
+.clip_button svg{
+
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.data_copy_msg{
+
+    position: absolute;
+    background-color: aqua;
+    font-size: medium;
+    font-weight: 500;
+    color: burlywood;
+    padding: 0.35rem;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    border-radius: 1.5rem;
+    top: -2.5rem;
+    left: -1.5rem;
+    scale: 0;
+    transition: all 200ms ease-in-out;
+}
+
+.active{
+    scale:1;
+}
+
+.color_str{
+
+    height: 1.5rem;
+    width: 1.5rem;
+    border-radius: 1rem;
+    background-color: #b3fff1;
+    box-shadow: 1px 1px 5px 5px #b3fff1;
+    transition: all 300ms ease-in-out;
+}
+
+
+.pink_btn{
+
+    margin-top: 0.5rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    font-size: x-large;
+    font-weight: 900;
+    border-radius: 1rem;
+    color: #b3fff1;
+    background-color: #0075FF;
+    border: 0px;
+    box-shadow: 0px 0px 10px 10px rgba(80, 185, 255, 0.2);
+    transition: all 200ms ease-in-out;
+    cursor: pointer;
+}
+.pink_btn:hover{
+
+    transform: scale(1.01);
+    background-color: #025bc2;
+    color: #64f8dc;
+
+}
+
+
+
+

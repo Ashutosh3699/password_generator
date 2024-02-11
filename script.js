@@ -11,6 +11,13 @@ function handleSlider(){
 
     slider_indicator.value = passwordLength;
     password_length.innerText= passwordLength;
+
+    // to measure the background color
+    // const min = slider_indicator.min;
+    // const max = slider_indicator.max;
+
+    // slider_indicator.style.backgroundSize = ((passwordLength-min)*100/(max-min)) + "% 100%";
+
 }
 
 const provideVal = ()=>{
@@ -84,13 +91,13 @@ const strengthColor = ()=>{
 
     if(hasLower && hasUpper && (hasNumber||hasSymbol) && passwordLength>=7){
 
-        setIndicator("#0f0");
+        setIndicator("#03fca0");
     }
     else if((hasLower || hasUpper) && (hasSymbol || hasNumber ) && passwordLength>=4){
-        setIndicator("#ff0");
+        setIndicator("#f2fc69");
     }
     else{
-        setIndicator("#f00");
+        setIndicator("#ff7033");
     }
 
 }
@@ -162,6 +169,8 @@ const shufflePassword = (points)=>{
 
     for (let i = points.length -1; i > 0; i--) {
         let j = Math.floor(Math.random() * (i+1));
+
+        // fint the index from 0 to i thn swap the position of i and j
         let k = points[i];
         points[i] = points[j];
         points[j] = k;
@@ -189,7 +198,7 @@ generate_btn.addEventListener('click',()=>{
 
     console.log("Starting the Journey");
     password = "";
-    // setting up of compulsory value
+    // setting up of compulsory value storing the function in the array and then calling it randomly
     let funcArr = [];
 
     if(upperCaseCheck.checked){

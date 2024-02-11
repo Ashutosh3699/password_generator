@@ -261,7 +261,6 @@
     background-repeat: no-repeat;
     border: none;
     position: relative;
-    transition: all 200ms ease-in-out;
     cursor: pointer;
     z-index: 0;
 

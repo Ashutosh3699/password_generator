@@ -13,10 +13,10 @@ function handleSlider(){
     password_length.innerText= passwordLength;
 
     // to measure the background color
-    // const min = slider_indicator.min;
-    // const max = slider_indicator.max;
+    const min = slider_indicator.min;
+    const max = slider_indicator.max;
 
-    // slider_indicator.style.backgroundSize = ((passwordLength-min)*100/(max-min)) + "% 100%";
+    slider_indicator.style.backgroundSize = ((passwordLength-min)*100/(max-min)) + "% 100%";
 
 }
 
@@ -24,6 +24,7 @@ const provideVal = ()=>{
 
     passwordLength = slider_indicator.value;
     password_length.innerText= passwordLength;
+    handleSlider()
 }
 
 
